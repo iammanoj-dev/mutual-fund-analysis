@@ -1,0 +1,49 @@
+DAY 1 DATA QUALITY REPORT
+=========================
+
+Dataset Validation Summary
+
+1. Total schemes in fund_master.csv: 40
+2. Total unique AMFI codes in nav_history.csv: 40
+3. Missing AMFI codes: 0
+4. AMFI validation status: PASSED
+
+Fund Master Insights
+
+Fund Houses: 10
+Categories: 2 (Equity, Debt)
+Sub Categories: 12
+
+Risk Distribution:
+- Moderate: 16
+- High: 8
+- Very High: 6
+- Low: 6
+- Moderately High: 4
+
+Data Quality Observations
+
+- No missing AMFI scheme mappings.
+- All 40 schemes have NAV history records.
+- Dataset structure is consistent and suitable for ETL processing.
+- Fund master metadata is complete.
+- NAV history is available for all schemes.
+
+API Validation
+
+Live NAV data successfully fetched using mfapi.in API.
+
+Files Generated
+
+- day1_exploration.txt
+- hdfc_top100_live_nav.csv
+- SBI_Bluechip.csv
+- ICICI_Bluechip.csv
+- Nippon_Large_Cap.csv
+- Axis_Bluechip.csv
+- Kotak_Bluechip.csv
+
+Conclusion
+
+Day 1 data ingestion and validation completed successfully.
+The datasets are ready for cleaning, transformation, and SQLite database loading in Day 2.
